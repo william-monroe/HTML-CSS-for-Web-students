@@ -15,14 +15,14 @@ class W3x19 {
 		double perimeter = 0.0;
 		
 		System.out.println("We are going to find the perimeter of a triangle.");
-		System.out.print("Enter the length of the longest side of the triangle: ");
+		System.out.print("Enter the length of the first side:1 ");
 		longSide = input.nextDouble();
-		System.out.print("Enter the length of one of the smaller sides: ");
+		System.out.print("Enter the length of the second side: ");
 		shortSide1 = input.nextDouble();
-		System.out.print("Enter the length of the other smaller side: ");
+		System.out.print("Enter the length of the third side: ");
 		shortSide2 = input.nextDouble();
 		
-		if ( longSide < shortSide1 + shortSide2 )
+		if ( (longSide < shortSide1 + shortSide2) && (shortSide1 < longSide + shortSide2) && (shortSide2 < longSide + shortSide1 ) )
 		{
 			perimeter = ( shortSide1 + shortSide2 + longSide );
 			System.out.println( "Perimeter: " + perimeter );
